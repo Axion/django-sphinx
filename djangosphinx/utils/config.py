@@ -19,7 +19,7 @@ def _get_database_engine():
         engine = ''
 
     if engine.endswith('mysql'):
-        return settings.DATABASE_ENGINE
+        return engine
     elif engine.find('postgresql') >= 0:
         return 'pgsql'
 
